@@ -1,0 +1,226 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+    margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+    line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+    text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+    color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+    min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+    scroll-margin-block: 5ex;
+}
+
+/* End CSS Reset */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav button {
+    background-color: #2980b9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+    background-color: #3498db;
+}
+
+/* Title styles */
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title-text {
+    font-size: 2em;
+    color: #2c3e50;
+}
+
+.contact-text {
+    font-size: 1em;
+
+}
+
+/* Intro styles */
+.intro {
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Hours styles */
+.hours {
+    margin-bottom: 20px;
+}
+
+.hours .title-text {
+    font-size: 1.5em;
+    color: #2980b9;
+}
+
+
+/* Contact section styles */
+.contact {
+    margin-bottom: 20px;
+}
+
+.contact .title-text {
+    font-size: 1.5em;
+    color: #2980b9;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-item {
+    font-size: 1em;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Location styles */
+.location {
+    margin-bottom: 20px;
+}
+
+.location .title-text {
+    font-size: 1.5em;
+    color: #27ae60;
+}
+
+.text {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* Food section styles */
+.food {
+    margin-bottom: 20px;
+}
+
+.foodDiv {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.food-title {
+    font-size: 1.5em;
+    color: #2980b9;
+}
+
+.food-description {
+    font-size: 1em;
+    line-height: 1.6;
+    flex: 1;
+}
+
+.food-price {
+    font-size: 1.2em;
+    color: #27ae60;
+}
+
+.food-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
